@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work — Ajeem / Tamil AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .page-head{padding:150px 0 40px;}
+  .page-head .eyebrow{font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:var(--patina);margin-bottom:18px;}
+  .page-head h1{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(34px,6vw,60px);letter-spacing:-0.01em;max-width:760px;}
+  .timeline{border-left:1px solid var(--line);padding-left:32px;}
+  .tl-item{position:relative;padding-bottom:34px;}
+  .tl-item:last-child{padding-bottom:0;}
+  .tl-item::before{content:"";position:absolute;left:-37px;top:5px;width:9px;height:9px;border-radius:50%;background:var(--stone-0);border:2px solid var(--bronze);}
+  .tl-date{font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--bronze-bright);margin-bottom:6px;}
+  .tl-title{font-family:'Fraunces',serif;font-size:18px;margin-bottom:4px;}
+  .tl-desc{color:var(--ink-dim);font-size:13.5px;max-width:520px;}
+  .northstar{display:grid;grid-template-columns:1fr 1fr;gap:40px;border:1px solid var(--line);padding:44px;}
+  .ns-block h3{font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:22px;color:var(--bronze-bright);margin-bottom:12px;}
+  .ns-block p{color:var(--ink-dim);font-size:14px;}
+  @media (max-width:760px){.northstar{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<svg class="icon-sprite" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+  <defs>
+    <symbol id="icon-retrieval" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="2.6"/><path d="M5 6V18C5 19.4 8.1 20.6 12 20.6C15.9 20.6 19 19.4 19 18V6"/><path d="M5 12C5 13.4 8.1 14.6 12 14.6C15.9 14.6 19 13.4 19 12"/></g></symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3L20 6.5V11C20 16 16.5 19.7 12 21C7.5 19.7 4 16 4 11V6.5L12 3Z"/><path d="M9 12L11 14L15.5 9.5"/></g></symbol>
+    <symbol id="icon-mic" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11C5 15 8.1 18 12 18C15.9 18 19 15 19 11"/><path d="M12 18V21M8 21H16"/></g></symbol>
+    <symbol id="icon-news" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="15" rx="1.5"/><path d="M7 8.5H14M7 12H14M7 15.5H11"/><path d="M17 8.5V15.5"/></g></symbol>
+  </defs>
+</svg>
+
+<header>
+  <div class="wrap">
+    <div class="logo">Ajeem <em>/ Tamil&nbsp;AI</em></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="page-head reveal">
+    <div class="eyebrow">Selected work</div>
+    <h1>Three builds, one throughline: Tamil-first AI infrastructure.</h1>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="section-num">01</span>
+      <h2>Pipeline</h2>
+      <div class="line"></div>
+    </div>
+
+    <div class="pipeline reveal">
+      <div class="pipeline-track"></div>
+
+      <div class="pipeline-node tilt-wrap">
+        <div class="project tilt">
+          <div class="tilt-shine"></div>
+          <div class="project-top">
+            <div class="project-name"><svg class="icon"><use href="#icon-retrieval"/></svg>TAMIL-AI.ME</div>
+            <div class="status build">In active development</div>
+          </div>
+          <p class="project-desc">A Tamil-first retrieval and translation platform: a FastAPI backend serving a RAG pipeline over classical Tamil literature, with IndicTrans2-powered English↔Tamil translation and a dedicated OCR pipeline — <strong>KalVettu</strong> — for reading Chola-era stone inscriptions.</p>
+          <div class="tags">
+            <span><span class="icon-3d"><img class="icon-brand" src="https://cdn.simpleicons.org/fastapi" alt="FastAPI"></span>FastAPI</span><span>ChromaDB RAG</span><span><span class="icon-3d"><img class="icon-brand" src="https://cdn.simpleicons.org/huggingface" alt="Hugging Face"></span>IndicTrans2</span><span>TrOCR + OpenCV</span><span>Multilingual embeddings</span>
+          </div>
+          <div class="project-stats">
+            <div><span class="k">Corpus</span><span class="v">4,592 entries · Thirukkural, Sangam texts</span></div>
+            <div><span class="k">Test coverage</span><span class="v">272 modular tests, passing</span></div>
+            <div><span class="k">OCR target</span><span class="v">40,000+ undigitized inscriptions</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pipeline-node tilt-wrap">
+        <div class="project tilt">
+          <div class="tilt-shine"></div>
+          <div class="project-top">
+            <div class="project-name"><svg class="icon"><use href="#icon-shield"/></svg>Eye-Care-Tool</div>
+            <div class="status live">v1.0.0 shipped</div>
+          </div>
+          <p class="project-desc">A lightweight Windows desktop utility that enforces healthy screen-time habits, packaged as a standalone <code>.exe</code>. Rebuilt with a focus on reliability and security hygiene — including a full remediation pass after a leaked credential was found in git history.</p>
+          <div class="tags">
+            <span><span class="icon-3d"><img class="icon-brand" src="https://cdn.simpleicons.org/python" alt="Python"></span>Python</span><span>Desktop packaging</span><span>Security remediation</span><span>Test-driven fixes</span>
+          </div>
+          <div class="project-stats">
+            <div><span class="k">Release</span><span class="v">Windows .exe, June 2026</span></div>
+            <div><span class="k">Hardening</span><span class="v">Secret scrubbed via git filter-repo</span></div>
+            <div><span class="k">Reliability</span><span class="v">try/finally guards, non-raising sender</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pipeline-node tilt-wrap">
+        <div class="project tilt">
+          <div class="tilt-shine"></div>
+          <div class="project-top">
+            <div class="project-name"><svg class="icon"><use href="#icon-mic"/></svg>JARVIS — Personal AI Assistant</div>
+            <div class="status pause">Paused · resuming post-exams</div>
+          </div>
+          <p class="project-desc">A phased, offline-capable personal assistant: voice I/O and a conversational core first, then productivity control (mail, research, system control), then wake-word detection and a Tamil-AI integration for bilingual interaction.</p>
+          <div class="tags">
+            <span>Whisper STT</span><span>Edge/Coqui TTS</span><span>Porcupine wake-word</span><span>Claude API + Ollama fallback</span>
+          </div>
+          <div class="project-stats">
+            <div><span class="k">Phase 1</span><span class="v">Voice I/O + reasoning core</span></div>
+            <div><span class="k">Phase 2</span><span class="v">Mail, research, system control</span></div>
+            <div><span class="k">Phase 3</span><span class="v">Offline mode + Tamil AI integration</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pipeline-node tilt-wrap">
+        <div class="project tilt">
+          <div class="tilt-shine"></div>
+          <div class="project-top">
+            <div class="project-name"><svg class="icon"><use href="#icon-news"/></svg>Daily News Bot</div>
+            <div class="status live">v1.0.0 shipped</div>
+          </div>
+          <p class="project-desc">A multi-category Telegram news bot that delivers a summarized morning briefing every day at 8:00 AM IST — pulling from RSS feeds, summarizing with Gemini 2.5 Flash (Groq as fallback), and running on a scheduled GitHub Actions pipeline with zero always-on infrastructure.</p>
+          <div class="tags">
+            <span>RSS ingestion</span><span><span class="icon-3d"><img class="icon-brand" src="https://cdn.simpleicons.org/googlegemini" alt="Gemini"></span>Gemini 2.5 Flash</span><span>Groq fallback</span><span><span class="icon-3d"><img class="icon-brand" src="https://cdn.simpleicons.org/githubactions" alt="GitHub Actions"></span>GitHub Actions</span><span><span class="icon-3d"><img class="icon-brand" src="https://cdn.simpleicons.org/telegram" alt="Telegram"></span>Telegram Bot API</span>
+          </div>
+          <div class="project-stats">
+            <div><span class="k">Delivery</span><span class="v">Daily · 8:00 AM IST</span></div>
+            <div><span class="k">Format</span><span class="v">Multi-category summarized briefing</span></div>
+            <div><span class="k">Infra</span><span class="v">Scheduled cron, no server to maintain</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="section-num">02</span>
+      <h2>Trajectory</h2>
+      <div class="line"></div>
+    </div>
+    <div class="timeline reveal">
+      <div class="tl-item">
+        <div class="tl-date">2026</div>
+        <div class="tl-title">11-project GitHub sprint</div>
+        <div class="tl-desc">Public, demo-backed builds shipping on a 1–2 week cadence, starting post-exams — each with a live demo, README, published datasets, and benchmarks.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">2027</div>
+        <div class="tl-title">Open-source track record</div>
+        <div class="tl-desc">Building contribution history toward Outreachy and GSoC eligibility, and a standalone KalVettu demo as a grant-readiness asset.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">2028</div>
+        <div class="tl-title">Sarvam AI</div>
+        <div class="tl-desc">Target: a research role building multilingual, India-first language models — the throughline for everything above.</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="northstar reveal">
+      <div class="ns-block">
+        <h3>Why Tamil-first?</h3>
+        <p>Tamil has one of the longest continuous literary traditions in the world, and one of the least-served in modern NLP. Building for Tamil first — not as a multilingual afterthought — is both a technical bet and a cultural-preservation one.</p>
+      </div>
+      <div class="ns-block">
+        <h3>How I work</h3>
+        <p>Modular architecture, lightweight-first, retrieval quality over raw model size. I adapt open models rather than train from scratch, and I document every project for handoff — to collaborators, and to future me.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 Ajeem — Tamil AI</span>
+    <span>Built for TAMIL-AI.ME · AI4Bharat-track</span>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
